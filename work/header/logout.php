@@ -1,0 +1,13 @@
+<?php
+session_start();
+session_destroy();
+unset($_SESSION['user_id']);
+unset($_SESSION['username']);
+unset($_SESSION['email']);
+unset($_SESSION['phone']);
+unset($_SESSION['category']);
+unset($_SESSION['address']);
+unset($_SESSION['password']);
+unset($_SESSION['user_type']);
+header('Location:../dashboard/sign-in.php');
+?>
